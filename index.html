@@ -15,9 +15,6 @@
         .gradient-bg {
             background: #f0f4f8;
         }
-        .hero-gradient {
-            background: linear-gradient(135deg, #4361ee, #7209b7);
-        }
         .feature-card, .tech-card {
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
@@ -45,6 +42,7 @@
 </head>
 <body class="gradient-bg text-gray-800">
 
+    <!-- Header -->
     <header class="bg-white/80 backdrop-blur-lg fixed top-0 left-0 right-0 z-50 shadow-sm">
         <div class="container mx-auto px-6 py-4 flex justify-between items-center">
             <div class="flex items-center space-x-2">
@@ -57,6 +55,7 @@
         </div>
     </header>
 
+    <!-- Hero Section -->
     <main class="pt-24">
         <section class="container mx-auto px-6 py-16 text-center">
             <h1 class="text-4xl md:text-6xl font-extrabold text-gray-900 leading-tight">
@@ -71,9 +70,11 @@
                 </a>
             </div>
 
+            <!-- Phone Mockup -->
             <div class="mt-20 relative flex justify-center">
                 <div class="w-80 h-[580px] bg-white phone-mockup p-3 relative">
                     <div class="bg-gray-100 w-full h-full rounded-3xl p-4 flex flex-col">
+                        <!-- App Header -->
                         <div class="flex items-center space-x-2 mb-4">
                             <i class="ph-bold ph-user-circle text-3xl text-gray-500"></i>
                             <div>
@@ -81,6 +82,7 @@
                                 <p class="text-sm text-left font-bold">Practice Ground</p>
                             </div>
                         </div>
+                        <!-- App Content -->
                         <div class="bg-white rounded-xl p-4 flex-grow relative">
                             <p class="text-left font-semibold mb-2">Select a task:</p>
                             <div class="space-y-3">
@@ -88,6 +90,7 @@
                                 <div class="bg-gray-100 p-3 rounded-lg text-left">Send Money to Contact</div>
                                 <div class="bg-gray-100 p-3 rounded-lg text-left">Pay Electricity Bill</div>
                             </div>
+                            <!-- Live Guide Overlay Mockup -->
                             <div class="absolute top-24 left-2 right-2 h-[52px] live-guide-overlay"></div>
                             <div class="absolute top-40 -right-10 bg-blue-600 text-white p-2 rounded-lg text-xs shadow-lg flex items-center space-x-1">
                                 <i class="ph-fill ph-microphone"></i>
@@ -99,6 +102,7 @@
             </div>
         </section>
 
+        <!-- Features Section -->
         <section id="features" class="py-20 bg-white">
             <div class="container mx-auto px-6">
                 <div class="text-center mb-12">
@@ -138,41 +142,55 @@
             </div>
         </section>
 
+        <!-- Tech Stack Section -- ICONS FIXED WITH OFFICIAL SVGs -->
         <section class="py-20">
             <div class="container mx-auto px-6 text-center">
                 <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Powered by a Modern Tech Stack</h2>
                 <p class="mt-3 text-lg text-gray-600">We use cutting-edge, scalable technology to build a trustworthy AI experience.</p>
                 <div class="mt-12 grid grid-cols-2 md:grid-cols-4 gap-8">
-                    <div class="bg-white p-6 rounded-2xl tech-card border border-gray-100 flex flex-col items-center justify-center">
-                        <img src="https://storage.googleapis.com/cms-storage-bucket/ec64036b4eacc9f3fd73.svg" alt="Flutter" class="h-12">
-                        <h3 class="mt-4 font-bold text-lg">Flutter</h3>
-                        <p class="text-sm text-gray-500 mt-1">Cross-Platform UI</p>
+                    <!-- Tech Card 1: Flutter -->
+                    <div class="bg-white p-6 rounded-2xl tech-card border border-gray-100 flex flex-col items-center justify-center space-y-4">
+                        <svg class="h-12 w-auto" viewBox="0 0 82 99" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M49.7733 98.7109L1.99219 50.9297L49.7733 3.14844H81.2405L49.7733 34.6157L81.2405 66.0829H49.7733L49.7733 98.7109Z" fill="#0468D7"/><path d="M49.7733 3.14844L81.2405 34.6157L65.5069 50.3492L49.7733 34.6157V3.14844Z" fill="#0468D7"/><path d="M1.99219 50.9297L25.8828 74.8203L49.7733 50.9297L25.8828 27.0391L1.99219 50.9297Z" fill="#24C1E0"/></svg>
+                        <div class="text-center">
+                            <h3 class="font-bold text-lg">Flutter</h3>
+                            <p class="text-sm text-gray-500 mt-1">Cross-Platform UI</p>
+                        </div>
                     </div>
-                    <div class="bg-white p-6 rounded-2xl tech-card border border-gray-100 flex flex-col items-center justify-center">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Google_Gemini_Logo.svg" alt="Google Gemini" class="h-12">
-                        <h3 class="mt-4 font-bold text-lg">Google Gemini</h3>
-                        <p class="text-sm text-gray-500 mt-1">AI Safety Drills</p>
+                    <!-- Tech Card 2: Google Gemini -->
+                    <div class="bg-white p-6 rounded-2xl tech-card border border-gray-100 flex flex-col items-center justify-center space-y-4">
+                        <svg class="h-12 w-auto" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.98993 11.18L12 6L14.0101 11.18L19.2 13.18L14.0101 15.18L12 20.36L9.98993 15.18L4.8 13.18L9.98993 11.18Z" fill="#4285F4"></path></svg>
+                        <div class="text-center">
+                             <h3 class="font-bold text-lg">Google Gemini</h3>
+                            <p class="text-sm text-gray-500 mt-1">AI Safety Drills</p>
+                        </div>
                     </div>
-                    <div class="bg-white p-6 rounded-2xl tech-card border border-gray-100 flex flex-col items-center justify-center">
-                        <img src="https://www.gstatic.com/devrel-devsite/prod/v2a02b542385631023c72b8349272f3d6110e31818c21255869485b0f44355325/firebase/images/lockup.svg" alt="Firebase" class="h-12">
-                        <h3 class="mt-4 font-bold text-lg">Firebase</h3>
-                        <p class="text-sm text-gray-500 mt-1">Backend & Auth</p>
+                    <!-- Tech Card 3: Firebase -->
+                    <div class="bg-white p-6 rounded-2xl tech-card border border-gray-100 flex flex-col items-center justify-center space-y-4">
+                        <svg class="h-12 w-auto" viewBox="0 0 19 28" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15.1002 0.399902L0.300171 21.0999L5.30017 25.1999L15.1002 8.3999L19.3002 21.0999L15.1002 0.399902Z" fill="#FFC24A"/><path d="M0.300171 21.0999L5.30017 25.1999L10.1002 18.2999L0.300171 21.0999Z" fill="#F57C00"/><path d="M15.1002 8.3999L5.30017 25.1999L10.1002 18.2999L19.3002 21.0999L15.1002 8.3999Z" fill="#FFA000"/></svg>
+                        <div class="text-center">
+                            <h3 class="font-bold text-lg">Firebase</h3>
+                            <p class="text-sm text-gray-500 mt-1">Backend & Auth</p>
+                        </div>
                     </div>
-                    <div class="bg-white p-6 rounded-2xl tech-card border border-gray-100 flex flex-col items-center justify-center">
-                        <img src="https://storage.googleapis.com/cms-storage-bucket/529PSBD5AL2C2d8301f2.svg" alt="Dart" class="h-12">
-                        <h3 class="mt-4 font-bold text-lg">Dart</h3>
-                        <p class="text-sm text-gray-500 mt-1">Core Logic</p>
+                    <!-- Tech Card 4: Dart -->
+                    <div class="bg-white p-6 rounded-2xl tech-card border border-gray-100 flex flex-col items-center justify-center space-y-4">
+                        <svg class="h-12 w-auto" viewBox="0 0 162 155" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M98.1562 154.688L0 56.5312L2.09375 54.4375L98.1562 2.1875L162 56.5312L98.1562 154.688Z" fill="#005D9E"/><path d="M98.1562 2.1875L162 56.5312L98.1562 101.5L62.8438 66.1875L98.1562 2.1875Z" fill="#00C5FD"/><path d="M98.1562 101.5L62.8438 66.1875L2.09375 54.4375L0 56.5312L98.1562 154.688L162 56.5312L98.1562 101.5Z" fill="#0086C9"/></svg>
+                        <div class="text-center">
+                            <h3 class="font-bold text-lg">Dart</h3>
+                            <p class="text-sm text-gray-500 mt-1">Core Logic</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
+        <!-- Waitlist Section -->
         <section id="waitlist" class="py-20 bg-white rounded-t-3xl">
             <div class="container mx-auto px-6 text-center max-w-2xl">
                 <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Ready to Pay with Confidence?</h2>
                 <p class="mt-3 text-lg text-gray-600">Be the first to know when AbhyasPay launches. Join our waitlist and help us build a safer digital India for everyone.</p>
                 <form id="waitlist-form" class="mt-8 flex flex-col md:flex-row justify-center gap-4">
-                    <input type="email" placeholder="Enter your email address" class="w-full md:w-80 px-5 py-3 rounded-full border-2 border-gray-300 focus:outline-none focus:border-blue-500 transition-colors" required>
+                    <input id="waitlist-email" type="email" placeholder="Enter your email address" class="w-full md:w-80 px-5 py-3 rounded-full border-2 border-gray-300 focus:outline-none focus:border-blue-500 transition-colors" required>
                     <button type="submit" class="bg-blue-600 text-white font-bold py-3 px-8 rounded-full hover:bg-blue-700 transition-transform transform hover:scale-105">
                         Notify Me
                     </button>
@@ -181,18 +199,30 @@
         </section>
     </main>
     
+    <!-- Footer -->
     <footer class="bg-gray-800 text-white">
         <div class="container mx-auto px-6 py-8 text-center">
             <p>&copy; 2025 AbhyasPay. Building a more inclusive Digital India.</p>
         </div>
     </footer>
 
+    <!-- JavaScript to prevent form refresh -->
     <script>
-        document.getElementById('waitlist-form').addEventListener('submit', function(event) {
-            event.preventDefault(); // This stops the page from reloading
-            alert('Thank you for joining the waitlist! We will notify you at launch.');
-        });
+        const waitlistForm = document.getElementById('waitlist-form');
+        if (waitlistForm) {
+            waitlistForm.addEventListener('submit', function(event) {
+                event.preventDefault(); // This stops the page from reloading
+                const emailInput = document.getElementById('waitlist-email');
+                if (emailInput.value) {
+                    alert('Thank you for joining the waitlist! We will notify you at: ' + emailInput.value);
+                    emailInput.value = ''; // Clear the input field after submission
+                } else {
+                    alert('Please enter a valid email address.');
+                }
+            });
+        }
     </script>
 
 </body>
 </html>
+
