@@ -149,7 +149,7 @@
                         <p class="text-sm text-gray-500 mt-1">Cross-Platform UI</p>
                     </div>
                     <div class="bg-white p-6 rounded-2xl tech-card border border-gray-100 flex flex-col items-center justify-center">
-                        <img src="https://symbols.getvecta.com/stencil_28/99_google-gemini-icon.cb13b0c345.svg" alt="Google Gemini" class="h-12">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Google_Gemini_Logo.svg" alt="Google Gemini" class="h-12">
                         <h3 class="mt-4 font-bold text-lg">Google Gemini</h3>
                         <p class="text-sm text-gray-500 mt-1">AI Safety Drills</p>
                     </div>
@@ -171,7 +171,7 @@
             <div class="container mx-auto px-6 text-center max-w-2xl">
                 <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Ready to Pay with Confidence?</h2>
                 <p class="mt-3 text-lg text-gray-600">Be the first to know when AbhyasPay launches. Join our waitlist and help us build a safer digital India for everyone.</p>
-                <form class="mt-8 flex flex-col md:flex-row justify-center gap-4">
+                <form id="waitlist-form" class="mt-8 flex flex-col md:flex-row justify-center gap-4">
                     <input type="email" placeholder="Enter your email address" class="w-full md:w-80 px-5 py-3 rounded-full border-2 border-gray-300 focus:outline-none focus:border-blue-500 transition-colors" required>
                     <button type="submit" class="bg-blue-600 text-white font-bold py-3 px-8 rounded-full hover:bg-blue-700 transition-transform transform hover:scale-105">
                         Notify Me
@@ -186,6 +186,13 @@
             <p>&copy; 2025 AbhyasPay. Building a more inclusive Digital India.</p>
         </div>
     </footer>
+
+    <script>
+        document.getElementById('waitlist-form').addEventListener('submit', function(event) {
+            event.preventDefault(); // This stops the page from reloading
+            alert('Thank you for joining the waitlist! We will notify you at launch.');
+        });
+    </script>
 
 </body>
 </html>
