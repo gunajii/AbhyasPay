@@ -28,7 +28,7 @@ Phosphor Icons for iconography
 
 You can view the live demo of the landing page hosted on GitHub Pages here:
 
-[Insert Your GitHub Pages URL Here]
+https://gunajii.github.io/AbhyasPay/
 
 🔧 How to Host
 
