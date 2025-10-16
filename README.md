@@ -1,4 +1,4 @@
-#AbhyasPay - Demo Landing Page
+AbhyasPay - Demo Landing Page
 
 This repository contains the source code for the AbhyasPay demo landing page, a project submission for the AI Hackathon.
 
